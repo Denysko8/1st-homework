@@ -24,16 +24,16 @@ class Planetary():
     def add_planet(self, planet):
         self.planets.append(planet)
 
-    def sort_by_lenght_of_day(self):
+    def sort_by_length_of_day(self):
         self.planets.sort(key=lambda planet: planet.length_of_day)
 
-    def findDistanceBetween(self, planetA, planetB):
+    def find_distance_between_plantes(self, planetA, planetB):
         distance_between = abs(planetA.distance_from_sun - planetB.distance_from_sun)
         return distance_between
 
-    def findAverageMass(self):
-        total_mas = sum(planet.mass for planet in self.planets)
-        average_mass = total_mas / len(self.planets)
+    def find_average_mass_of_planets(self):
+        total_mass = sum(planet.mass for planet in self.planets)
+        average_mass = total_mass / len(self.planets)
         return average_mass
 
 
